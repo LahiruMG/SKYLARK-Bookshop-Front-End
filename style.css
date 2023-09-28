@@ -1,0 +1,815 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --background-color:White;
+    --secondary-color:rgba(161, 161, 161,0.6);
+    --dark:rgb(31, 31, 31);
+    
+}
+
+
+/*<--------------------------------NAVBAR-WITH-HEADER-CONTAINER----------------------------->*/
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(34, 34, 34);
+    color: var(--background-color);;
+    text-align: center;
+    line-height: 30px;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    font-family: 'Concert One', cursive;
+    font-family: 'Thasadith', sans-serif;   
+}
+center {
+    font-family: 'Quicksand', sans-serif;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    margin-top: 5px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: var(--background-color);   
+}
+nav ul li a:hover{
+    color: tomato;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+    border-bottom: 2px solid tomato;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("images/background/women.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icons{
+    display: flex;
+}
+.icons i:hover{
+    color: tomato;
+    transition: 0.4s;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 185px;
+    margin-top: 22px;
+
+    background-color: var(--background-color);
+    border-radius: 30px;
+    margin-right: 50px;
+    
+}
+.search input{
+    background-color: var(--background-color);
+    outline: none;
+    height: 20px;
+    width: 150px;
+    border: none;
+}
+input[type="search"]{
+    width: 140px;
+}
+.searchbtn{
+    margin-top: 8px;
+    cursor: pointer;
+}
+.account a{
+    color: var(--background-color);
+    margin-right: 20px;
+    cursor: pointer;
+}
+.addtocart {
+    color: var(--background-color);
+    
+    cursor: pointer;
+}
+
+.quote{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    line-height: 80px;
+    font-family: 'Cinzel', serif;
+    font-family: 'Old Standard TT', serif;
+}
+.quote-bold{
+    font-size: 40px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+button:hover{
+    color: var(--background-color);
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: tomato;
+    cursor: pointer;  
+}
+
+
+/*----------------------------------------WHATS-NEW----------------------------------------------*/
+
+.whatsnew{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    text-align: center;
+    padding: 50px 0;
+    line-height: 33px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Concert One', cursive;
+}
+
+.star{
+    color: rgb(224, 183, 0);
+    font-weight: bolder;
+}
+.wrapper{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Quicksand', sans-serif;
+}
+.wrapper .card{
+    height: 400px;
+    width: 200px;
+  
+    margin: 20px;
+}
+.wrapper .card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    
+}
+.card img{
+    width: 100%;
+    height: 70%;
+    box-shadow: 5px 5px 0  rgba(0,0,0,0.5);
+}
+.hr{
+    width: 300px;
+    margin-top: 20px;
+}
+.hr2{
+    width: 300px;
+}
+
+
+.btn {
+    cursor: pointer;
+    background-color: tomato;
+    border-radius: 30px;
+    
+}
+.btn:hover{
+    background-color: var(--dark);
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+    
+}
+.info a{
+    text-decoration: none;
+    padding: 2px 10px;
+    color: var(--background-color); 
+}
+.allnew{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------SPECIAL----------------------------------------------------*/
+
+.special{
+    height: 100%;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.flex{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+}
+.special .book{
+    position: relative;
+    width: 383px;
+    margin-top: 50px;
+    height: 567px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.special .book:hover{
+    transform: rotateY(35deg);
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+
+}
+.special .book:active{
+    transform: rotateY(180deg);
+
+}
+.special .book::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    transform-origin: left;
+    background-image: url("images/special/side.jpg");
+    background-position: center;
+    transform:rotateY(90deg);
+}
+
+.special .book::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background-image: url("images/special/back.jpg");
+    background-position: center;
+    transform:rotateY(180deg) translateZ(60px);
+}
+.special .book img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offer{
+    width: 30%;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+}
+
+
+
+
+/*-------------------------------------PARALLAX-------------------------------------*/
+
+.margin-h{
+ margin-top: 5%;
+}
+
+.parallax-h{
+    background: url("images/parallax/books.jpg") repeat  fixed 100%; 
+    background-size: 100%;  
+    color: var(--background-color);
+    text-align: center;
+}
+.parallax-inner-h{
+    padding: 20% 0;
+}
+.bigtext{
+    text-align: left;
+    color:var(--background-color);
+    font-weight: bolder;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 120px;
+    letter-spacing: 3px;
+}
+
+/*------------------------------------NEWSTELLER--------------------------------------*/
+
+.newsteller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    font-family: 'Quicksand', sans-serif;
+}
+.newsteller{
+    line-height: 60px;
+    text-align: center;
+}
+.newsteller .email{
+    margin-right: 50px;
+    padding: 2px 10px;
+    width: 500px;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+
+/*-------------------------------------FOOTER--------------------------------------------*/
+.footer{
+    margin-top: 30px;
+    display: flex;
+    height: 250px;
+    justify-content: space-around;
+    line-height: 40px;
+    color: var(--dark);
+    font-family: 'Quicksand', sans-serif;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: var(--dark);
+}
+.footer .payment{
+    text-align: right;
+}
+
+/*-----------------------------------SHOP-PAGE--------------------------------------------*/
+
+.margin-s{
+margin-top:0%;
+}
+.parallax-s{
+   background: url("images/parallax/rack.jpg")  repeat  fixed 100%; 
+   background-position: center;
+   background-size: 100%; 
+   color: var(--background-color);
+   text-align: center;
+   line-height: 30px;
+   letter-spacing: 3px;
+   font-weight: bolder;
+   font-family: 'Concert One', cursive;
+   font-family: 'Thasadith', sans-serif;
+}
+.parallax-inner-s{
+   padding: 5% 0;
+}
+.bestselling .txt{
+    text-align: center;
+    margin: 30px 0;
+}
+.txt{
+    text-align: center;
+}
+
+.sortby{
+    background-color: rgb(206, 206, 206);
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.sort{
+    margin: 0 20px;
+}
+.select1 {
+    background-color: rgb(206, 206, 206);
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/*---------------------------------PAGINATION-------------------------------------*/
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    margin: 20px 0;
+
+}
+.pagination a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--background-color);
+}
+.pagination a:hover{
+    background-color: tomato;
+
+}
+.pagination a.active{
+    background-color: tomato;
+}
+
+/*-----------------------------CATAGORY-PAGE---------------------------------------*/
+
+.margin-c{
+margin-top:0%;
+}
+.parallax-c{
+    background: url("images/parallax/man.jpg")  repeat  fixed 100%; 
+    background-position: center; 
+    background-size: 100%; 
+    color: var(--background-color);
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+    font-family: 'Thasadith', sans-serif;
+}
+.parallax-inner-c{
+    padding: 5% 0;
+}
+
+.catagory{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.c-card{
+    width: 250px;
+    height: 250px;
+    padding: 2rem 1rem;
+    margin: 50px 20px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5 ease-in-out;
+}
+.c-card:hover{
+    transform: translateY(20px);
+    transition: 0.5s ;
+}
+.c-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 97, 69,0.5),rgba(255, 97, 69,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.c-card:hover:before{
+    opacity: 1;
+}
+.c-card img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.c-info{
+    width: 250px;
+    height: 150px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;  
+    height: 100%;
+}
+.c-info:hover{
+    opacity: 1;
+}
+.cat{
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: translateY(-30px);
+    color: var(--background-color);
+    text-align: center;
+}
+.c-info a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px ;
+    border-radius: 30px;
+}
+/*----------------------------------------LOGIN--------------------------------------*/
+
+.background{
+    background-image: url(images/background/2.jpg);
+    height: 100vh;
+    background-position: center;
+}
+.login_container{
+    position: relative;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    }
+    
+    .login_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9));
+        
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+        border-radius: 0;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    }
+    
+    .login_box h2{
+    margin: 0 0 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+    }
+    .login_box .user_box{
+    position: relative;
+    }
+    .login_box .user_box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+   
+    background-color: transparent;
+    }
+    .login_box .user_box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+    }
+    .login_box .user_box input:focus ~ label,
+    .login_box .user_box input:valid ~ label{
+        top: -20px;
+        color: tomato;
+        font-size: 12px;
+    }
+    
+    .login_box form a{
+    display: inline-block;
+    padding: 10px 20px;
+    color:#fff;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin: 20px 0 50px 0;
+    letter-spacing: 4px;
+    background-color: tomato;
+    border:1px solid tomato;
+    }
+    .login_box form a:hover{
+    background-color: tomato;
+    color: #fff;
+    box-shadow: 0 0 5px tomato,
+                0 0 25px tomato,
+                0 0 5px tomato,
+                0 0 5px tomato;
+    }
+    .l-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .l-button h4{
+        color: var(--background-color);
+        cursor: pointer;
+
+    }
+
+/*--------------------------------------SIGNUP------------------------------------------*/
+
+.s-background{
+    background-image: url(images/background/books2.jpg);
+    height: 100vh;
+    background-position: center;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.wrap{
+    max-width: 350px;
+    margin:0 20% 180px 40%;
+    background:rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    }
+    h2{
+        text-align: center;
+    }
+    input[type=text],input[type=Password]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0,0.2);
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin:5px;
+    font-weight: bold;
+    }
+    input[type=submit]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #ffffff;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    }
+    input[type=submit]:hover{
+        background: tomato;
+        opacity: 0.6;
+        color: white;
+    }
+    /*-------------------------------------------BUY-page----------------------------------------*/
+    .margin-b{
+        margin-top:0%;
+        }
+        .parallax-b{
+            background: url("images/parallax/buy.jpg")  repeat  fixed 100%; 
+            background-position: center; 
+            background-size: 100%; 
+            color: var(--background-color);
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 3px;
+            font-weight: bolder;
+            font-family: 'Concert One', cursive;
+            font-family: 'Thasadith', sans-serif;
+        }
+        .parallax-inner-b{
+            padding: 5% 0;
+        }
+    fieldset{
+        height: auto;
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 0 10px;
+        line-height: 50px;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+    }
+    table input[type="email"],[type="name"],[type="address"],[type="postal code"]{
+        height: 40px;
+        width: 270px;
+        padding: 5px 5px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        outline: none;
+        margin-right: 20px ;
+    }
+    .country{
+        width: 270px;
+        height: 40px;
+        margin-right: 20px ;
+    }
+
+    .item{
+        display:flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 70px;
+        
+        padding: 20px;
+        padding-left: 90px;
+        background-color: rgb(250, 250, 250);
+        border-radius: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .item-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .item-book {
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+        height: 160px;
+    }
+    .item-description{
+        padding-left: 30px;
+        padding-top: 5px;
+        line-height: 23px;
+        border-left: 2px solid tomato;
+        height: 160px;
+    }
+    .buy-item{
+        display: flex;
+        flex-wrap: wrap; 
+        margin-bottom: 30px; 
+    }
+    .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        border-bottom: 4px solid rgb(252, 252, 252);;
+    }
+    .trust-badge{
+        margin-top: 50px;
+    }
+
+/*-----------------------------------------RESPONSIVE_DESIGN-----------------------------------------*/
+@media only screen and (max-width:1310px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    } 
+    .special{
+        perspective: 5000px;
+        
+    } 
+    .inline{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }  
+    
+}
+@media only screen and (max-width:480px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+    
